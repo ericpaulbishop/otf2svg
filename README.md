@@ -80,7 +80,7 @@ ISC
 [npm-url]: https://npmjs.org/package/otf2svg
 [npm-image]: http://img.shields.io/npm/v/otf2svg.svg
 
-[travis-url]: https://travis-ci.org/ericpaulbishop/fonteditor-core
+[travis-url]: https://travis-ci.org/ericpaulbishop/otf2svg
 [travis-image]: http://img.shields.io/travis/ericpaulbishop/otf2svg.svg
 
 [downloads-image]: http://img.shields.io/npm/dm/otf2svg.svg
