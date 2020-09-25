@@ -28,7 +28,7 @@ direct opentype to truetype conversion or fonteditor-core fixes their opentype c
 
 To use as a module:
 
-``js
+```js
 
 const otf2svg = require('otf2svg);
 
@@ -39,38 +39,38 @@ let createdSVGFilePath = otf2svg.convertToFile("/path/to/input.otf", "/path/to/d
 let unicodePointsToInclude = [ 0x5b99 ];
 let createdSvgSubsetFilePath = otf2svg.convertToFile("/path/to/input.otf", "/path/to/desired/output-subset.svg", unicodePointsToInclude)
 
-``
+```
 
 To use as CLI:
 
 
-``
+```
 otf2svg /path/to/input.otf /path/to/output.svg
-``
+```
 
 The command line tool cannot do subsetting at this time (you will have to use as a module for this).
 
 
 ## API
 
-### `otf2svg.convert(inputOTF, subsetUnicodePointArray = null)`
+#### `otf2svg.convert(inputOTF, subsetUnicodePointArray = null)`
 
 Converts an OTF font file to an SVG file, returning a string representation of the raw SVG file.
 
-inputOTF: If this is a string, it is interpretted as a file to open and read. If this is a Buffer, it is interpretted as binary OTF data.
+`inputOTF`: If this is a string, it is interpretted as a file to open and read. If this is a Buffer, it is interpretted as binary OTF data.
 
-subsetUnicodePointArray: If this is null, the entire file is converted, which is the default. Otherwise it should be an integer array containing unicode code points to preserve.
+`subsetUnicodePointArray`: If this is null, the entire file is converted, which is the default. Otherwise it should be an integer array containing unicode code points to preserve.
 
-### `otf2svg.convertToFile(inputOTF, outputSVG = null, subsetUnicodePointArray = null)`
+#### `otf2svg.convertToFile(inputOTF, outputSVG = null, subsetUnicodePointArray = null)`
 
 Converts an OTF font file to an SVG file, returning the path of the SVG file written
 
-inputOTF: If this is a string, it is interpretted as a file to open and read. If this is a Buffer, it is interpretted as binary OTF data.
+`inputOTF`: If this is a string, it is interpretted as a file to open and read. If this is a Buffer, it is interpretted as binary OTF data.
 
-outputOTF: The path of the output file to write the SVG file to. If this is null, the path will be the same as the input file with the extension switched to 
+`outputOTF`: The path of the output file to write the SVG file to. If this is null, the path will be the same as the input file with the extension switched to 
 ".svg". If the input is a buffer and the parameter is null the  output path will be "output.svg"
 
-subsetUnicodePointArray: If this is null, the entire file is converted, which is the default. Otherwise it should be an integer array containing unicode code points to preserve.
+`subsetUnicodePointArray`: If this is null, the entire file is converted, which is the default. Otherwise it should be an integer array containing unicode code points to preserve.
 
 ## License
 
