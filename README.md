@@ -37,7 +37,9 @@ let rawSVGString = otf2svg.convert("/path/to/input.otf");
 let createdSVGFilePath = otf2svg.convertToFile("/path/to/input.otf", "/path/to/desired/output.svg");
 
 let unicodePointsToInclude = [ 0x5b99 ];
-let createdSvgSubsetFilePath = otf2svg.convertToFile("/path/to/input.otf", "/path/to/desired/output-subset.svg", unicodePointsToInclude)
+let createdSvgSubsetFilePath = otf2svg.convertToFile("/path/to/input.otf", 
+                                                     "/path/to/desired/output-subset.svg", 
+                                                     unicodePointsToInclude);
 
 ```
 
