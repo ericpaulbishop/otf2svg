@@ -30,7 +30,7 @@ To use as a module:
 
 ```js
 
-const otf2svg = require('otf2svg);
+const otf2svg = require('otf2svg');
 
 let rawSVGString = otf2svg.convert("/path/to/input.otf");
 
