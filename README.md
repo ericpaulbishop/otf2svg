@@ -57,7 +57,7 @@ The command line tool cannot do subsetting at this time (you will have to use as
 
 #### `otf2svg.convert(inputOTF, subsetUnicodePointArray = null)`
 
-Converts an OTF font file to an SVG file, returning a string representation of the raw SVG file.
+Converts an OTF font file to an SVG file, returning a string representation of the raw SVG file. All I/O is performed synchronously.
 
 `inputOTF`: If this is a string, it is interpretted as a file to open and read. If this is a Buffer, it is interpretted as binary OTF data.
 
@@ -65,7 +65,7 @@ Converts an OTF font file to an SVG file, returning a string representation of t
 
 #### `otf2svg.convertToFile(inputOTF, outputSVG = null, subsetUnicodePointArray = null)`
 
-Converts an OTF font file to an SVG file, returning the path of the SVG file written
+Converts an OTF font file to an SVG file, returning the path of the SVG file written. All I/O is performed synchronously.
 
 `inputOTF`: If this is a string, it is interpretted as a file to open and read. If this is a Buffer, it is interpretted as binary OTF data.
 
