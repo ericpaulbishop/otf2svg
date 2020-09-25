@@ -1,7 +1,9 @@
 {
   "name": "otf2svg",
   "version": "1.0.0",
-  "description": "Convert Open Type (otf) font files to SVG font files",
+  "description": "Convert Open Type (OTF) font files to SVG font files",
+  "author": "Eric P. Bishop <ericpaulbishop@gmail.com>",
+  "repository": "github:ericpaulbishop/otf2svg",
   "bin": {
     "otf2svg": "./lib/index.js"
   },
